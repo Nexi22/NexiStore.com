@@ -1,0 +1,78 @@
+/* Contenedor de la barra de navegación */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Esto centra verticalmente el contenido */
+    padding: 0 5%; /* Añade margen a los lados */
+    background-color: #8df09a; 
+}
+
+/* Estilos para el título "Cinefilos" */
+.menu h1 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* Estilos para la lista de enlaces */
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Estilos para los elementos de la lista */
+.menu li {
+    margin-right: 20px; /* Espacio entre elementos de la lista */
+}
+
+/* Estilos para los enlaces */
+.menu a {
+    text-decoration: none;
+    color: #ece8e1;
+    font-weight: bold;
+    font-size: 30px; /* Tamaño de la fuente del NAV */
+}
+
+/* Cambio de color al pasar por encima de los enlaces */
+.menu a:hover {
+    color: rgba(0, 0, 0, 0.9);
+    transition-duration: 1s;
+}
+
+/* Estilos para la imagen del logo */
+.menu h1 img {
+    width: 100px; /* Ancho de la imagen */
+    height: 100px; /* Altura de la imagen */
+    margin-right: 10px; /* Espacio entre la imagen y el titulo "Nexi Store" */
+}
+
+@media (max-width: 600px) {
+    .menu {
+        flex-direction: column; /* Cambiar a una disposición de columna */
+        padding: 10px; /* Añade más espacio en los lados */
+        text-align: center; /* Centra el texto */
+    }
+
+    /* Estilos para el título "Nexi Store" en celulares */
+    .menu h1 {
+        font-size: 30px; /* Reduce el tamaño de la fuente */
+        margin-bottom: 10px; /* Agrega margen inferior */
+    }
+
+    /* Estilos para la lista de enlaces en dispositivos móviles */
+    .menu ul {
+        flex-direction: column; /* Cambiar a una disposición de columna */
+        align-items: center; /* Centra los elementos verticalmente */
+    }
+
+    /* Estilos para los elementos de la lista en dispositivos móviles */
+    .menu li {
+        margin: 5px 0; /* Espacio entre elementos */
+    }
+
+    /* Estilos para los enlaces en dispositivos móviles */
+    .menu a {
+        font-size: 25px; /* Tamaño de la fuente */
+    }
+}
