@@ -1,2 +1,2 @@
-# NexiStore.com
+nexistore.com
 Pagina Web NexiStore
